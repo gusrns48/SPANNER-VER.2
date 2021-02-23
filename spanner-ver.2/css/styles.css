@@ -1,0 +1,313 @@
+/* app container */
+*{
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+h3, h4{
+    font-weight: lighter;
+    margin:0;   
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+#app-container{
+    width: 850px;
+    height: 500px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    /* background-color: #0F3A53; */
+    background-color: #ffffff80;
+    -webkit-box-shadow: 0px 0px 8px 3px #ffffff80;
+    -moz-box-shadow: 0px 0px 8px 3px #ffffff80;
+    box-shadow: 0px 0px 8px 3px #ffffff80;
+}
+
+
+/*  calender.css */
+.calender_title{
+    margin-bottom: 30px;
+    color: rgb(65, 64, 64);
+}
+.calender_title_prev-month-btn{
+    cursor: pointer;
+    /* color: #fc9f9f; */
+    color: #6ca5c5;
+}
+.calender_title_next-month-btn{
+    cursor: pointer;
+    color: #6ca5c5;
+}
+.calender-container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calender_table_tr-days{
+    color: #2b90ca;
+    /* color: #fcbc7d; */
+}
+tr{
+    height: 50px;
+}
+th{
+    width: 50px;
+}
+td{
+    text-align : center;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+td:hover{
+   /* background-color: rgba(199, 199, 199, 0.438); */
+   -webkit-box-shadow: 0px 0px 8px 3px #ffffff80 inset;
+    -moz-box-shadow: 0px 0px 8px 3px #ffffff80 inset;
+    box-shadow: 0px 0px 8px 3px #ffffff80 inset;
+}
+tbody .selected-date{
+    background-color: #ffffffbe;
+    -webkit-box-shadow: 0px 0px 8px 3px #ffffff80;
+    -moz-box-shadow: 0px 0px 8px 3px #ffffff80;
+    box-shadow: 0px 0px 8px 3px #ffffff80;
+}
+.sunday{
+    color: red;
+}
+.today{
+    /* background-color:#ffffffda; */
+    background-color: #ffffffbe;
+    -webkit-box-shadow: 0px 0px 8px 3px #ffffff80;
+    -moz-box-shadow: 0px 0px 8px 3px #ffffff80;
+    box-shadow: 0px 0px 8px 3px #ffffff80;
+}
+
+/* weather container */
+.weather-container{
+    width: 345px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.438);
+    margin-bottom: 10px;
+}
+.todo_footer_alert{
+    width: 345px;
+    padding-left:5px;
+    padding-right:5px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #ff414ea2;
+}
+
+/* todo.css */
+
+.todo-list-container{
+    padding: 25px;
+    /* background-color: white; */
+    border-radius: 16px;
+    width: 330px;
+    height: 480px;
+    position: relative;
+    background-color: #ffffffda;
+    -webkit-box-shadow: 0px 0px 8px 3px #ffffff80;
+    -moz-box-shadow: 0px 0px 8px 3px #ffffff80;
+    box-shadow: 0px 0px 8px 3px #ffffff80;
+}
+/* todo- header */
+.todo_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo_header i{
+    cursor: pointer;
+}
+.todo_header_time_weather{
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-position: center;
+}
+.todo_header_time_weather:hover{
+    cursor: pointer;
+}
+.fa-sun{
+    color: orange;
+}
+.todo_greeting{
+    display: flex;
+    justify-content: start;
+    margin: 15px 0 15px 0;
+}
+h2{
+    margin:0;
+}
+.todo_greeting_input{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+    background-color: transparent;
+}
+.todo_greeting_input:focus{
+   outline: unset;
+}
+.todo_footer{
+    display: flex;
+    position: absolute;
+    bottom:10px;
+    right: 10px;
+}
+.todo_footer_form_plus-icon{
+    color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 25px;
+    /* padding: 3px; */
+    background-color: #ff414e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.todo_footer_form{
+    padding:5px;
+    background-color: #ff414e;
+    border-radius: 25px;
+}
+.todo_footer_form input{
+    /* all: unset; */
+    margin-left: 3px;
+    border: none;
+    border-radius: 16px;
+    padding-left: 10px;
+    height: 29px;
+}
+.todo_footer_form input:focus{
+    outline: none;
+}
+.todo_footer{
+    background-color: #ff414e;
+    border-radius: 25px;
+}
+h4{
+    margin:0;
+}
+.todo_list_pending-container{
+    margin-bottom: 10px;
+    min-height: 100px;
+    border-radius: 16px;
+    border: 1px solid #e4e4e4;
+    padding: 10px;
+}
+.todo_list_pending_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.todo_list_pending_todayBtn{
+    width: 60px;
+    height: 20px;
+    background: linear-gradient(to right, #67b26b, #4ca2cb);
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+}
+/* width 가 커지는 애니메이션은 뭔가 무빙이 찌질해서 없앰 */
+/* .todo_list_pending_todayBtn:hover{
+    width: 65px;
+    transition: 0.5s;
+} */
+.todo_list_pending_todayBtn:hover .todayBtn_text{
+    padding-right: 10px;
+}
+.todo_list_pending_todayBtn:hover span::after{
+    opacity: 1;
+    right: 0;
+}
+.todayBtn_text{
+   line-height: 20px;
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+   font-size: 15px;
+}
+.todayBtn_text::after{
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+}
+.todo_list_finished-container{
+    border-radius: 16px;
+    border: 1px solid #e4e4e4;
+    padding: 10px;
+}
+.todo_list_title{
+    font-size: 15px;
+}
+
+.todo_list-container ul{
+    padding-left: 10px;
+}
+    
+.todo_list-container li{
+    font-family: 'Balsamiq Sans', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+li:hover {
+    background-color:#ffe59054;
+  }
+li::before {
+    content: "# ";
+    color : grey;
+  }
+button {
+    all: unset;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+
+
+
+  /* display control */
+
+.display_none{
+    display: none;
+}
+.display_block{
+    display: block;
+}
+.date_underline{
+   text-decoration: underline grey;
+    /* -webkit-box-shadow: 0px 0px 8px 3px #ffffff80 inset;
+    -moz-box-shadow: 0px 0px 8px 3px #ffffff80 inset;
+    box-shadow: 0px 0px 20px -10px #fa0303 inset; */
+}

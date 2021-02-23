@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5fab680b0a.js" crossorigin="anonymous"></script>
+    <title>kwangwoon/Sw20/Spanner/Ver2</title>
+</head>
+<body>
+  <div class="flash-message__container"></div>
+  <div class="content">
+    <div><a href="http://www.youtube.com"><img src="images\rink\youtube.jpg" width="60" height="60" style= margin-right:80px;/></a>
+    <a href="http://www.netflix.com/"><img src="images\rink\netflix.jpg" width="60" height="60" style= margin-right:80px;/></a>
+    <a href="http://www.naver.com/"><img src="images\rink\naver.jpg" width="60" height="60" style= margin-right:80px;/></a>
+    <a href="http://www.google.com/"><img src="images\rink\google.jpg" width="60" height="60"/></a>
+  </div><br><br>
+    <div class="js-clock clock">
+      <h1 class="clock__timestamp">00:00</h1><br><br>
+    </div>
+    <h4 class="js-greetings greetings"></h4>
+    <form class="js-form form">
+      <input
+        name="user__name"
+        class="form__name"
+        type="text"
+        placeholder=" + Your Name"
+      />
+    </form>
+    <div class="js-message">
+      <p>Daliy
+        <span class="message-value"></span>
+        on your new tab page.
+      </p>
+    </div>
+    <br>
+
+    <div class="js-weather"></div>
+  </a>
+  <script src="./js/index.js"></script>
+  <script src="./js/bg.js"></script>
+  <script src="./js/clock.js"></script>
+  <script src="./js/greeting.js"></script>
+  <script src="./js/message.js"></script>
+  <script src="./js/weather.js"></script>
+    <div id="app-container">
+        <div class="calender-container" id="calender-container">
+            <div class="calender_title">
+                <h2 class="calender_title-text"> 
+                    <span class="calender_title_prev-month-btn"> <i class="fas fa-chevron-circle-left"></i></span>
+                    <span class="calender_title_month"></span>
+                    <span class="calender_title_year"></span>
+                    <span class="calender_title_next-month-btn"> <i class="fas fa-chevron-circle-right"></i> </span>
+                </h2>
+            </div>
+            <table class="calender-table">
+                <tr class="calender_table_tr-days">
+                    <th class="calender_days_day">MON</th>
+                    <th class="calender_days_day">TUE</th>
+                    <th class="calender_days_day">WED</th>
+                    <th class="calender_days_day">THU</th>
+                    <th class="calender_days_day">FRI</th>
+                    <th class="calender_days_day">SAT</th>
+                    <th class="calender_days_day sunday">SUN</th>
+                </tr>
+            </table>
+            <div class="weather-container">
+            </div>
+            <div class="todo_footer_alert"></div>
+        </div>
+        <div class="todo-list-container">
+            <header class="todo_header">
+                <div class="todo_header_navs">
+                    <span class="todo_header_navs_calBtn"><i class="far fa-calendar"></i></span>
+                    <!-- <span class="cog"><i class="fas fa-cog"></i></span>
+                    <span class="alarm"> <i class="far fa-bell"></i></span> -->
+                </div>
+                <div class="todo_header_avatar"> <i class="fas fa-stream"></i> </div>
+            </header>
+            <br>
+            <main class="todo_list-container">
+                <div class="todo_list_pending-container">
+                    <div class="todo_list_pending_header">
+                        <div class="todo_list_title">
+                          <h4>To-do</h4>
+                        </div>
+                        <div class="todo_list_pending_todayBtn"><span class="todayBtn_text">today</span></div>
+                    </div>
+                    <ul class="todo_list_pending_ul">
+                    </ul>
+                </div>
+                <div class="todo_list_finished-container">
+                  <div class="todo_list_finished_title">
+                    <h4>Done</h4>
+                  </div>
+                    <ul class="todo_list_finished_ul">
+                    </ul>
+                </div>
+            </main>
+            <footer class="todo_footer">
+                <form class="todo_footer_form">
+                    <input type="text" name="task" placeholder="add tasks ">
+                    </input>
+                </form>
+                <div class="todo_footer_form_plus-icon">
+                        +
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="./js/background.js"></script>
+    <script src="./js/calender.js"></script>
+    <script src="./js/greeting2.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/time.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/screen.js"></script>
+</body>
+</html>
